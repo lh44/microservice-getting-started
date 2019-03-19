@@ -1,0 +1,17 @@
+server:
+  port: 8090
+eureka:
+  instance:
+    hostname: 192.168.43.116
+    non-secure-port: ${server.port}
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://192.168.43.116:8761/eureka}
+spring:
+  application:
+    name: api-gateway
+ribbon:
+  eureka:
+    enabled: true
