@@ -83,12 +83,14 @@ spring:
 ## Clean install should create docker images for all three applications
 
 > docker images
-  
+
+```  
   REPOSITORY                                       TAG                 IMAGE ID            CREATED             SIZE
   microservice.getting.started/api-gateway         latest              06ca5658c83f        26 hours ago        146MB
   microservice.getting.started/date-service        latest              bb82fed9fde5        26 hours ago        143MB
   microservice.getting.started/service-discovery   latest              dde3dfd8291f        26 hours ago        148MB
   openjdk                                          8-jdk-alpine        e9ea51023687        12 days ago         105MB
+```
 
 ## Start your application containers
 
@@ -99,11 +101,13 @@ spring:
 ## Make sure the containers are successfully created
 > docker ps
 
+```
   CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS              PORTS                    NAMES
 45b52174177a        microservice.getting.started/date-service        "java -Djava.securit…"   26 hours ago        Up 26 hours         0.0.0.0:8081->8081/tcp   nifty_booth
 0fe35794d1d3        microservice.getting.started/api-gateway         "java -Djava.securit…"   26 hours ago        Up 26 hours         0.0.0.0:8090->8090/tcp   flamboyant_easley
 21d3ae800cea        microservice.getting.started/service-discovery   "java -Djava.securit…"   26 hours ago        Up 26 hours         0.0.0.0:8761->8761/tcp   nostalgic_stallman
-  
+```
+
 ## Check the Service Discovery dashboard
 link - http://localhost:8761
 
