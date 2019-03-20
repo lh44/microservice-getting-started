@@ -1,5 +1,3 @@
-Go thru this section to get the bigger picture
-
 ### What will this project helps you with?
 This helps you with fundamentals of building a microservice and deploying it in as a docker container
 
