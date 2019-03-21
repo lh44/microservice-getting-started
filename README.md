@@ -76,7 +76,8 @@ spring:
 ## Do a maven clean install
 
 > cd microservice-getting-started
-  mvn clean install
+
+>  mvn clean install
   
 ## Clean install should create docker images for all three applications
 
@@ -93,7 +94,9 @@ spring:
 ## Start your application containers
 
   > docker run -d -p 8761:8761 microservice.getting.started/service-discovery
+  
   > docker run -d -p 8090:8090 microservice.getting.started/api-gateway
+  
   > docker run -d -p 8081:8081 microservice.getting.started/date-service
   
 ## Make sure the containers are successfully created
